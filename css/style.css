@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -101,27 +102,30 @@ h1{
     font-size: 22px;
     color: black;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 35px;
 }
-p{
+.sous-titre{
     font-weight: 400;
     font-size: 16px;
     color: black;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 35px;
 }
+
 
 .recherche .fa-solid {
     color: black;
     padding: 15px 18px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 .recherche{
     display: flex;
     flex-direction: row;
     justify-content:start;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: 35px;
 }
 
 #ville {
@@ -146,8 +150,67 @@ input[type='submit'] {
     align-items: center;
 }
 
+/****** Filter ***********/
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 65%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-left: 0px;
+}
+
+div ul li .fa-solid{
+    padding-right: 10px;
+}
+
+.filtres p{
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+div ul li {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+.filtres ul li:hover{
+    background-color: #DEEBFF;
+}
+.infos-filtre i{
+    margin-right: 10px;
+    color: #D9D9D9;
+    margin-bottom: 35px;
+}
+
 
 /****** Hebergements And Populaires ***********/
+h2{
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
