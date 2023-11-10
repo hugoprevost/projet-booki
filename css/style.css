@@ -58,6 +58,95 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div a {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.lien-actif{
+    color: #0065FC;
+    border-top:2px solid #0065FC;
+}
+
+.lien-inactif{
+    padding-left: 30px;
+}
+
+.logo-header{
+    width: 30%;
+}
+
+/****** contenue top ***********/
+
+h1{
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.recherche .fa-solid {
+    color: black;
+    padding: 15px 18px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    margin-top: 0px;
+}
+.recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#ville {
+    vertical-align: middle; 
+    border: 0.5px solid #F2F2F2;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 12px 18px;
+}
+
+input[type='submit'] {
+    border: none;
+    padding: 12px 18px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0px 15px 15px 0px;
+    align-items: center;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
