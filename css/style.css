@@ -285,6 +285,7 @@ h2{
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+    font-family: 'Raleway', sans-serif;
 }
 
 /****** Populaires ***********/
@@ -333,6 +334,44 @@ h2{
 }
 
 
+/****** Activité ***********/
+
+.categorie-activite{
+    margin-top: 30px;
+}
+
+.conteneur-activite{
+    padding: 30px;
+}
+
+.activites{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-activite{
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card-activite img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    height: 380px;
+    width: 300px;
+}
+
+.card-activite h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 20px;
+    padding-left: 19px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
