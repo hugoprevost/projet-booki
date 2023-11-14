@@ -242,7 +242,7 @@ div ul li .fa-solid{
 }
 
 .hebergement-cards .card-content {
-    width: 80%;
+    width: 100%;
     padding-left: 15px;
     box-sizing: border-box;
 }
@@ -445,19 +445,13 @@ div ul li .fa-solid{
         font-size: 13px;
     }
 
-  
-    .card-activite img{ 
-        height: 200px;
-        width: 100%;
-        max-width: 190px;
-        box-sizing: border-box;
-    }
-    
-    .card-activite h3{
-        box-sizing: border-box;
-        width: 80%;
+    .activites-cards img { 
+        height: 200px; 
     }
 
+    .footer article{
+        margin-right: 120px;
+    }
 
 
 }
