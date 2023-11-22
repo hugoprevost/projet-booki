@@ -79,15 +79,17 @@ nav div a {
     font-size: 16px;
     color: black;
     font-family: 'Raleway', sans-serif;
+    margin-left: 30px;
 }
 
-.lien-actif{
+.lien-actif:hover{
     color: #0065FC;
     border-top:2px solid #0065FC;
 }
 
-.lien-inactif{
-    padding-left: 30px;
+.lien-inactif:hover{
+    color: #0065FC;
+    border-top:2px solid #0065FC;
 }
 
 .logo-header{
@@ -143,11 +145,29 @@ h1{
     padding: 15px 18px;
     background-color: #0065FC;
     color: #FFFFFF;
+    margin-left: -12px;
     font-weight: 700;
     font-size: 18px;
     border-radius: 0px 14.5px 14.5px 0px;
     margin-top: 10px;
 }
+
+#loupe {
+    color: white;
+    padding: 20px 18px 20px 18px;
+    background-color: #F2F2F2;
+    margin-top: 8px;
+    border-radius: 20px 20px;
+    background-color: #0065FC;
+    margin-left: -12px; 
+}
+form button {
+    display:none;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
 
 /****** Filter ***********/
 
@@ -205,7 +225,6 @@ div ul li .fa-solid{
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -214,6 +233,7 @@ div ul li .fa-solid{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
     
 }
 
@@ -270,6 +290,7 @@ div ul li .fa-solid{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -392,6 +413,7 @@ div ul li .fa-solid{
 
 /****** header ***********/
     h1{
+        margin-top: 30px;
         margin-bottom: 8px;
     }
 
@@ -411,7 +433,16 @@ div ul li .fa-solid{
         margin-right: 15px;
         margin-left: 0px;
         margin-top: 20px;
+        font-size: 15px;
     } 
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-subtitle{
+        font-size: 14px;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -466,17 +497,27 @@ div ul li .fa-solid{
     
     nav { 
         flex-direction: column; 
+        justify-content: center;
+        align-items: center;
     }
-    
-    .lien-actif{
+
+    nav div a {
+        padding-bottom: 15px;
+        padding: 15px 20px;
+        margin-left: 0px;
+        border-bottom:2px solid #F2F2F2;
+    }
+
+    .lien-actif:hover{
         color: #0065FC;
         border-bottom:2px solid #0065FC;
         border-top: 0px;
     }
     
-    .lien-inactif{
-        padding-left: 30px;
-        border-bottom:2px solid #F2F2F2;
+    .lien-inactif:hover{
+        color: #0065FC;
+        border-bottom:2px solid #0065FC;
+        border-top: 0px;
     }
     
     .logo-header{
@@ -485,6 +526,25 @@ div ul li .fa-solid{
         margin: auto;
         display: flex;
     } 
+
+    .recherche{
+        justify-content: center;
+    }
+
+    .ville {
+        padding: 14.5px 0px 14.5px 18px;
+    }
+
+    form button
+    {
+        display: inline;
+    }
+
+    .cta{
+        display: none;
+    }
+
+
     .filtres{
         padding: 0 20px;
     }
@@ -496,7 +556,11 @@ div ul li .fa-solid{
     .filtres ul{ 
         display: flex;
         flex-wrap: wrap; 
+        justify-content: space-between;
     } 
+    .filtres ul li{
+        width: 33%;
+    }
 
     h1 {
         padding: 0 20px;
@@ -511,6 +575,11 @@ div ul li .fa-solid{
 
     .hebergements-and-populaires section {
         border-radius: 0px;
+        padding: 20px;
+    }
+
+    .populaires{
+        background-color: var(--main-bg-color);
     }
 
     .populaires-cards {
@@ -535,7 +604,6 @@ div ul li .fa-solid{
     
     .hebergements {
         background-color: #FFFFFF;
-        
     }
     
     .hebergement-cards{
@@ -582,5 +650,34 @@ div ul li .fa-solid{
         margin-top: 0px;
         padding-top: 30px;
     }
+
+    /****** Activités ***********/
+
+.activites{
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.activites-cards{
+    flex-direction: column;
+}
+
+.activites-cards .card { 
+    margin-top: 33px; 
+    width: 100%;
+    padding: 0px;
+}
+
+.activites-cards img {
+    height: 141px;
+}
+.footer{
+    flex-direction: column;
+}
+
+.footer article{
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
 
 }
