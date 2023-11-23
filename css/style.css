@@ -211,10 +211,18 @@ div ul li .fa-solid{
 .filtres ul li:hover{
     background-color: #DEEBFF;
 }
-.infos-filtre i{
-    margin-right: 10px;
-    color: #D9D9D9;
+
+.plus-filtre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 35px;
+    gap: 10px;
+}
+
+.plus-filtre i{
+    color: #D9D9D9;
+    
 }
 
 
@@ -495,18 +503,7 @@ div ul li .fa-solid{
     }
     /* header */ 
     
-    nav { 
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav div a {
-        padding-bottom: 15px;
-        padding: 15px 20px;
-        margin-left: 0px;
-        border-bottom:2px solid #F2F2F2;
-    }
+    
 
     .lien-actif:hover{
         color: #0065FC;
@@ -531,6 +528,10 @@ div ul li .fa-solid{
         justify-content: center;
     }
 
+    .recherche .fa-solid {
+        margin-top: 6px;
+    }
+
     .ville {
         padding: 14.5px 0px 14.5px 18px;
     }
@@ -544,6 +545,26 @@ div ul li .fa-solid{
         display: none;
     }
 
+
+    nav { 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav div a {
+        display:inline-block;
+        padding-bottom: 15px;
+        width: 49%;
+        margin: 0px;
+        text-align: center;
+        border-bottom:2px solid #F2F2F2;
+        
+    }
+
+    nav div{
+        width: 100%;
+    }
 
     .filtres{
         padding: 0 20px;
@@ -559,7 +580,12 @@ div ul li .fa-solid{
         justify-content: space-between;
     } 
     .filtres ul li{
-        width: 33%;
+        width: 31%;
+        font-size: 13px;
+    }
+
+    .plus-filtre{
+        padding: 0 20px;
     }
 
     h1 {
