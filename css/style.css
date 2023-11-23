@@ -73,7 +73,7 @@ nav {
     justify-content: space-between;
 }
 
-nav div a {
+.lien-actif {
     padding-top: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -83,13 +83,8 @@ nav div a {
 }
 
 .lien-actif:hover{
-    color: #0065FC;
-    border-top:2px solid #0065FC;
-}
-
-.lien-inactif:hover{
-    color: #0065FC;
-    border-top:2px solid #0065FC;
+    border-top:2px solid var(--main-color);;
+    color: var(--main-color);
 }
 
 .logo-header{
@@ -117,7 +112,7 @@ h1{
 .recherche .fa-solid {
     color: black;
     padding: 18px 18px 18px 18px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 15px 0px 0px 15px;
     margin-top: 10px;
 }
@@ -131,7 +126,7 @@ h1{
 }
 
 .ville {
-    border: 0.5px solid #F2F2F2;
+    border: 0.5px solid var(--main-bg-color);
     font-weight: 700;
     font-size: 18px;
     color: black;
@@ -143,7 +138,7 @@ h1{
 .cta {
     border: none;
     padding: 15px 18px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: #FFFFFF;
     margin-left: -12px;
     font-weight: 700;
@@ -155,10 +150,10 @@ h1{
 #loupe {
     color: white;
     padding: 20px 18px 20px 18px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin-top: 8px;
     border-radius: 20px 20px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     margin-left: -12px; 
 }
 form button {
@@ -198,7 +193,7 @@ div ul li .fa-solid{
 }
 
 .filtres ul li {
-    border: 2px solid #D9D9D9;
+    border: 2px solid var(--filter-bg-color);
     border-radius: 25px;
     color: #000000;
     font-weight: 700;
@@ -209,7 +204,7 @@ div ul li .fa-solid{
     margin-left: 15px;
 }
 .filtres ul li:hover{
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 .plus-filtre{
@@ -221,7 +216,7 @@ div ul li .fa-solid{
 }
 
 .plus-filtre i{
-    color: #D9D9D9;
+    color: var(--main-bg-color);
     
 }
 
@@ -386,7 +381,7 @@ div ul li .fa-solid{
 
 /****** footer ***********/
 .footer{
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 20px;
     display: flex;
     margin-bottom: 20px;
@@ -506,14 +501,8 @@ div ul li .fa-solid{
     
 
     .lien-actif:hover{
-        color: #0065FC;
-        border-bottom:2px solid #0065FC;
-        border-top: 0px;
-    }
-    
-    .lien-inactif:hover{
-        color: #0065FC;
-        border-bottom:2px solid #0065FC;
+        color: var(--main-color);
+        border-bottom:2px solid var(--main-color);;
         border-top: 0px;
     }
     
@@ -552,13 +541,13 @@ div ul li .fa-solid{
         align-items: center;
     }
 
-    nav div a {
+    .lien-actif {
         display:inline-block;
         padding-bottom: 15px;
         width: 49%;
         margin: 0px;
         text-align: center;
-        border-bottom:2px solid #F2F2F2;
+        border-bottom:2px solid var(--main-bg-color);
         
     }
 
@@ -606,6 +595,7 @@ div ul li .fa-solid{
 
     .populaires{
         background-color: var(--main-bg-color);
+        margin-top: 0px;
     }
 
     .populaires-cards {
@@ -629,7 +619,7 @@ div ul li .fa-solid{
     }
     
     .hebergements {
-        background-color: #FFFFFF;
+        background-color: white;
     }
     
     .hebergement-cards{
@@ -699,6 +689,8 @@ div ul li .fa-solid{
 }
 .footer{
     flex-direction: column;
+    margin-bottom: 0px;
+    padding: 30px;
 }
 
 .footer article{
