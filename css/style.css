@@ -256,7 +256,10 @@ div ul li .fa-solid{
     flex-direction: column;
     align-items: start;
     margin-top: 30px; 
-    width: 30%;
+}
+
+.hebergement-cards a {
+    width: 31%;
 }
 
 .hebergement-cards img {
@@ -357,12 +360,15 @@ div ul li .fa-solid{
     width: 100%;
 }
 
+.activites-cards a {
+    width: 23%;
+}
+
 .activites-cards .card {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: 30px; 
-    width: 23%;
+    margin-top: 30px;
     padding: 0px;
 }
 
@@ -655,7 +661,10 @@ div ul li .fa-solid{
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: 15px; 
+        margin-top: 15px;
+    }
+
+    .hebergement-cards a {
         width: 100%;
     }
     
@@ -706,9 +715,12 @@ div ul li .fa-solid{
         flex-direction: column;
     }
 
-    .activites-cards .card { 
-        margin-top: 30px; 
+    .activites-cards a {  
         width: 100%;
+    }
+
+    .activites-cards .card { 
+        margin-top: 30px;
         padding: 0px;
     }
 
